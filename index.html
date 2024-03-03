@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<head>
+<title>PharoJS Counter</title>
+
+<!--meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+    style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, 
+ minimum-scale=1, width=device-width"-->
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/pharoJsLogo.png" width="250">
+    <div id="countDisplay" class="countText">0</div>
+    <button id="resetButton" class="resetButton">Reset</button>
+    <button id="incrementButton" class="incrementButton">Increment</button>
+    <form id="form1">
+        First name:<br>
+        <input id="field1" type="text" name="firstname"><br>
+        Last name:<br>
+        <input id="field2" type="text" name="lastname"><br>
+        <button id="hello" class="hello" type="submit">OK</button>
+    </form>
+</div>
+
+<!--script type="text/javascript" src="cordova.js"></script-->
+
+<script language="javascript" type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
