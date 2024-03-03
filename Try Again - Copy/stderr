@@ -1,0 +1,105 @@
+[31mInstance of PjCounterBrowserApp class did not understand #controller
+[0mPjCounterBrowserApp class(Object)>>doesNotUnderstand: #controller
+UndefinedObject>>DoIt
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate in Block: [ receiver withArgs: (context ifNil: [ #() ] ifNot...etc...
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+[
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionModel doItReceiver.
+		result := receiver class compiler
+			source: aString readStream;
+			context: self interactionModel doItContext;
+			receiver: self interactionModel doItReceiver;
+			requestor: self interactionModel;
+			environment: self environment;
+			failBlock:  [ ^ compileErrorBlock value ];
+			evaluate.
+		oldBindings size = self interactionModel bindings size 
+			ifFalse: [ self withAdapterDo: [ :anAdapter | anAdapter refreshStyling ] ].
+		result ] in SpCodePresenter>>evaluate:onCompileError:onError: in Block: [...
+FullBlockClosure(BlockClosure)>>on:do:
+SpCodePresenter>>evaluate:onCompileError:onError:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluate:andDo:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluateSelectionAndDo:
+SpCodeDoItCommand>>execute
+SpCommand(CmCommandDecorator)>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute in Block: [ self decoratedCommand execute ]
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during: in Block: [ activeProcess...
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute in Block: [ self decoratedCommand execute ]
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during: in Block: [ activeProcess...
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ] in SpKMCategoryBuilder>>visitCommand: in Block: [ ...
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer: in Block: [ :l | l completeMatch: self buffer: aBuffer ]
+[0m[31mInstance of PjCounterBrowserApp class did not understand #controller
+[0mPjCounterBrowserApp class(Object)>>doesNotUnderstand: #controller
+UndefinedObject>>DoIt
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate in Block: [ receiver withArgs: (context ifNil: [ #() ] ifNot...etc...
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+[
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionModel doItReceiver.
+		result := receiver class compiler
+			source: aString readStream;
+			context: self interactionModel doItContext;
+			receiver: self interactionModel doItReceiver;
+			requestor: self interactionModel;
+			environment: self environment;
+			failBlock:  [ ^ compileErrorBlock value ];
+			evaluate.
+		oldBindings size = self interactionModel bindings size 
+			ifFalse: [ self withAdapterDo: [ :anAdapter | anAdapter refreshStyling ] ].
+		result ] in SpCodePresenter>>evaluate:onCompileError:onError: in Block: [...
+FullBlockClosure(BlockClosure)>>on:do:
+SpCodePresenter>>evaluate:onCompileError:onError:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluate:andDo:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluateSelectionAndDo:
+SpCodeDoItCommand>>execute
+SpCommand(CmCommandDecorator)>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute in Block: [ self decoratedCommand execute ]
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during: in Block: [ activeProcess...
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute in Block: [ self decoratedCommand execute ]
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during: in Block: [ activeProcess...
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ] in SpKMCategoryBuilder>>visitCommand: in Block: [ ...
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer: in Block: [ :l | l completeMatch: self buffer: aBuffer ]
+[0m

@@ -1,0 +1,1 @@
+OmEntry {	#tags : {		#timestamp : DateAndTime [ '2024-03-03T08:20:38.213-05:00' ],		#self : OmReference [ '1' ]	},	#content : 'Metacello new\r  baseline: \'PharoJS\';\r  repository: \'github://PharoJS/PharoJS:pharo10\';\r  load'}

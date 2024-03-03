@@ -1,0 +1,1 @@
+Metacello new  baseline: 'PharoJS';  repository: 'github://PharoJS/PharoJS:pharo10';  load

@@ -1,0 +1,1 @@
+"Connection established with Javascript via PharoJS bridge listening on port 1024.""PharoJS playground preset bindings including the bridge and JS globals.You can find them all in the bindings menu"PjCounterBrowserApp controller increment.

@@ -1,0 +1,1638 @@
+THERE_BE_DRAGONS_HERE
+Instance of PjCounterBrowserApp class did not understand #controller
+3 March 2024 11:36:12.806 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+PjCounterBrowserApp class(Object)>>doesNotUnderstand: #controller
+	Receiver: PjCounterBrowserApp
+	Arguments and temporary variables: 
+		aMessage: 	controller
+		exception: 	Instance of PjCounterBrowserApp class did not understand #controller...etc...
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		superclass: 	PjFileBasedWebApp
+		methodDict: 	a MethodDictionary(#countDisplay->PjCounterBrowserApp>>#countDispla...etc...
+		format: 	65538
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	#()
+		name: 	#PjCounterBrowserApp
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PharoJs-Examples-Counter'
+		appFolder: 	{localDirectory}\iceberg\PharoJS\PharoJS\HTML\PharoJs-Examples\PjCou...etc...
+		currentInstance: 	nil
+		port: 	nil
+		status: 	nil
+		exportVersion: 	nil
+		cssFile: 	nil
+		htmlFile: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+nil
+
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PjCounterBrowserApp controller increment "Connection established ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self ...etc...
+	Arguments and temporary variables: 
+		exception: 	SyntaxErrorNotification
+		handlerAction: 	[ :exception | 
+			self compilationContext requestor
+           ...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>evaluate
+		startpc: 	a CompiledBlock: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil...etc...
+		numArgs: 	0
+		receiver: 	an OpalCompiler
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PjCounterBrowserApp controller increment "Connection established ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+[
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionModel doItReceiver.
+		result := receiver class compiler
+			source: aString readStream;
+			context: self interactionModel doItContext;
+			receiver: self interactionModel doItReceiver;
+			requestor: self interactionModel;
+			environment: self environment;
+			failBlock:  [ ^ compileErrorBlock value ];
+			evaluate.
+		oldBindings size = self interactionModel bindings size 
+			ifFalse: [ self withAdapterDo: [ :anAdapter | anAdapter refreshStyling ] ].
+		result ] in SpCodePresenter>>evaluate:onCompileError:onError:
+	Receiver: a SpCodePresenter
+	Arguments and temporary variables: 
+		aString: 	'"Connection established with Javascript via PharoJS bridge listening ...etc...
+		compileErrorBlock: 	[ ^ self ]
+		errorBlock: 	[ :e | e pass ]
+		receiver: 	nil
+		result: 	nil
+		oldBindings: 	a Dictionary(#Float32Array->a Proxy for Float32Array #FormData->a ...etc...
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicCodeAdapter)
+		announcer: 	an Announcer
+		owner: 	a StPlaygroundPagePresenter
+		adapter: 	a SpMorphicCodeAdapter
+		needRebuild: 	true
+		eventHandler: 	a SpEventHandler
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ a KMCategory ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Code' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpAbstractWidgetLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		borderWidth: 	an ObservableValueHolder[ nil ]
+		borderColor: 	an ObservableValueHolder[ nil ]
+		dragEnabled: 	an ObservableValueHolder[ false ]
+		dropEnabled: 	an ObservableValueHolder[ false ]
+		color: 	an ObservableValueHolder[ nil ]
+		help: 	an ObservableValueHolder[ nil ]
+		enabled: 	an ObservableValueHolder[ true ]
+		wantsDrop: 	an ObservableValueHolder[ [ :transfer | self dropEnabled ] ]
+		acceptDrop: 	an ObservableValueHolder[ [ :transfer | ] ]
+		deferredActions: 	nil
+		hasUnacceptedEdits: 	an ObservableValueHolder[ false ]
+		selection: 	an ObservableValueHolder[ (1 to: 243) ]
+		wantsVisualFeedback: 	an ObservableValueHolder[ true ]
+		askBeforeDiscardingEdits: 	an ObservableValueHolder[ true ]
+		text: 	an ObservableValueHolder[ '"Connection established with Javascript via Ph...etc...
+		actionToPerform: 	an ObservableValueHolder[ [ :txt |  ] ]
+		readSelection: 	an ObservableValueHolder[ [ selection ] ]
+		placeholder: 	an ObservableValueHolder[ '' ]
+		contextMenu: 	an ObservableValueHolder[ [ (self menuActionsFor: text) asMenuPres...etc...
+		scrollValue: 	an ObservableValueHolder[ (0@0) ]
+		editionContextMenu: 	an ObservableValueHolder[ true ]
+		editable: 	an ObservableValueHolder[ true ]
+		wrapWord: 	an ObservableValueHolder[ true ]
+		undoRedoHistory: 	true
+		wrapScrollBars: 	true
+		propagateNaturalHeight: 	false
+		propagateNaturalWidth: 	false
+		scrollBarStyles: 	#()
+		syntaxHighlight: 	an ObservableValueHolder[ true ]
+		lineNumbers: 	an ObservableValueHolder[ true ]
+		interactionModel: 	an ObservableValueHolder[ a StPlaygroundInteractionModel ]
+		overrideContextMenu: 	true
+		submitBlock: 	nil
+		resetBlock: 	nil
+		environment: 	nil
+		systemNavigation: 	nil
+		syntaxHighlightTheme: 	an ObservableValueHolder[ nil ]
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionMode...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :e | e pass ]
+	Receiver's instance variables: 
+		outerContext: 	SpCodePresenter>>evaluate:onCompileError:onError:
+		startpc: 	a CompiledBlock: [
+		oldBindings := self interactionModel bindings cop...etc...
+		numArgs: 	0
+		receiver: 	a SpCodePresenter
+
+
+SpCodePresenter>>evaluate:onCompileError:onError:
+	Receiver: a SpCodePresenter
+	Arguments and temporary variables: 
+		receiver: 	nil
+		result: 	nil
+		oldBindings: 	a Dictionary(#Float32Array->a Proxy for Float32Array #FormData->a ...etc...
+		aString: 	'"Connection established with Javascript via PharoJS bridge listening ...etc...
+		compileErrorBlock: 	[ ^ self ]
+		errorBlock: 	[ :e | e pass ]
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicCodeAdapter)
+		announcer: 	an Announcer
+		owner: 	a StPlaygroundPagePresenter
+		adapter: 	a SpMorphicCodeAdapter
+		needRebuild: 	true
+		eventHandler: 	a SpEventHandler
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ a KMCategory ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Code' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpAbstractWidgetLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		borderWidth: 	an ObservableValueHolder[ nil ]
+		borderColor: 	an ObservableValueHolder[ nil ]
+		dragEnabled: 	an ObservableValueHolder[ false ]
+		dropEnabled: 	an ObservableValueHolder[ false ]
+		color: 	an ObservableValueHolder[ nil ]
+		help: 	an ObservableValueHolder[ nil ]
+		enabled: 	an ObservableValueHolder[ true ]
+		wantsDrop: 	an ObservableValueHolder[ [ :transfer | self dropEnabled ] ]
+		acceptDrop: 	an ObservableValueHolder[ [ :transfer | ] ]
+		deferredActions: 	nil
+		hasUnacceptedEdits: 	an ObservableValueHolder[ false ]
+		selection: 	an ObservableValueHolder[ (1 to: 243) ]
+		wantsVisualFeedback: 	an ObservableValueHolder[ true ]
+		askBeforeDiscardingEdits: 	an ObservableValueHolder[ true ]
+		text: 	an ObservableValueHolder[ '"Connection established with Javascript via Ph...etc...
+		actionToPerform: 	an ObservableValueHolder[ [ :txt |  ] ]
+		readSelection: 	an ObservableValueHolder[ [ selection ] ]
+		placeholder: 	an ObservableValueHolder[ '' ]
+		contextMenu: 	an ObservableValueHolder[ [ (self menuActionsFor: text) asMenuPres...etc...
+		scrollValue: 	an ObservableValueHolder[ (0@0) ]
+		editionContextMenu: 	an ObservableValueHolder[ true ]
+		editable: 	an ObservableValueHolder[ true ]
+		wrapWord: 	an ObservableValueHolder[ true ]
+		undoRedoHistory: 	true
+		wrapScrollBars: 	true
+		propagateNaturalHeight: 	false
+		propagateNaturalWidth: 	false
+		scrollBarStyles: 	#()
+		syntaxHighlight: 	an ObservableValueHolder[ true ]
+		lineNumbers: 	an ObservableValueHolder[ true ]
+		interactionModel: 	an ObservableValueHolder[ a StPlaygroundInteractionModel ]
+		overrideContextMenu: 	true
+		submitBlock: 	nil
+		resetBlock: 	nil
+		environment: 	nil
+		systemNavigation: 	nil
+		syntaxHighlightTheme: 	an ObservableValueHolder[ nil ]
+
+
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluate:andDo:
+	Receiver: a SpCodeDoItCommand
+	Arguments and temporary variables: 
+		aString: 	'"Connection established with Javascript via PharoJS bridge listening ...etc...
+		aBlock: 	[ :result | ]
+	Receiver's instance variables: 
+		context: 	a SpCodePresenter
+		basicName: 	'Do it'
+		basicDescription: 	'Evaluate selection.'
+		transform: 	[ :aContext | aContext ]
+
+
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluateSelectionAndDo:
+	Receiver: a SpCodeDoItCommand
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | ]
+		selection: 	'"Connection established with Javascript via PharoJS bridge listenin...etc...
+	Receiver's instance variables: 
+		context: 	a SpCodePresenter
+		basicName: 	'Do it'
+		basicDescription: 	'Evaluate selection.'
+		transform: 	[ :aContext | aContext ]
+
+
+SpCodeDoItCommand>>execute
+	Receiver: a SpCodeDoItCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		context: 	a SpCodePresenter
+		basicName: 	'Do it'
+		basicDescription: 	'Evaluate selection.'
+		transform: 	[ :aContext | aContext ]
+
+
+SpCommand(CmCommandDecorator)>>execute
+	Receiver: a SpCommand(Do it)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpCodeDoItCommand
+		iconProvider: 	nil
+		iconName: 	#smallDoIt
+		shortcutKey: 	a KMKeyCombinationChoice
+		displayStrategy: 	a CmUIDisableWhenCantBeRun
+		positionStrategy: 	a CmUILeftPositionStrategy
+		buildPresenterBlock: 	[ :specCommand | 
+			aButtonClass new
+				label: specComma...etc...
+		presenter: 	nil
+
+
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpCommand(Do it)
+
+
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	a StPharoApplication
+	Receiver's instance variables: 
+		index: 	11
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+			activeProcess
+				psValueAt: index
+				put: oldValue ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SpToolCurrentApplication(DynamicVariable)>>value:during:
+		startpc: 	a CompiledBlock: [ activeProcess
+			psValueAt: index
+			put: anObject....etc...
+		numArgs: 	0
+		receiver: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	a StPharoApplication
+	Receiver's instance variables: 
+		index: 	11
+
+
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+	Receiver: SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+	Receiver's instance variables: 
+		superclass: 	DynamicVariable
+		methodDict: 	a MethodDictionary()
+		format: 	65537
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SpToolCurrentApplication
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Spec2-Commands-Presenters'
+		soleInstance: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpCommand(Do it)
+
+
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpToolCurrentApplicationCommand
+
+
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	nil
+	Receiver's instance variables: 
+		index: 	11
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+			activeProcess
+				psValueAt: index
+				put: oldValue ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SpToolCurrentApplication(DynamicVariable)>>value:during:
+		startpc: 	a CompiledBlock: [ activeProcess
+			psValueAt: index
+			put: anObject....etc...
+		numArgs: 	0
+		receiver: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	nil
+	Receiver's instance variables: 
+		index: 	11
+
+
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+	Receiver: SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+	Receiver's instance variables: 
+		superclass: 	DynamicVariable
+		methodDict: 	a MethodDictionary()
+		format: 	65537
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SpToolCurrentApplication
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Spec2-Commands-Presenters'
+		soleInstance: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpToolCurrentApplicationCommand
+
+
+[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ] in SpKMCategoryBuilder>>visitCommand:
+	Receiver: a SpKMCategoryBuilder
+	Arguments and temporary variables: 
+		aCmCommand: 	a SpToolCurrentApplicationCommand
+	Receiver's instance variables: 
+		kmCategory: 	a KMCategory
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(616196352)
+	Receiver's instance variables: 
+		outerContext: 	SpKMCategoryBuilder>>visitCommand:
+		startpc: 	a CompiledBlock: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComm...etc...
+		numArgs: 	0
+		receiver: 	a SpKMCategoryBuilder
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(616196352)
+		secondArg: 	a RubEditingArea(616196352)
+	Receiver's instance variables: 
+		outerContext: 	SpKMCategoryBuilder>>visitCommand:
+		startpc: 	a CompiledBlock: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComm...etc...
+		numArgs: 	0
+		receiver: 	a SpKMCategoryBuilder
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+	Receiver: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(616196352)
+		secondArg: 	a RubEditingArea(616196352)
+		thirdArg: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		outerContext: 	SpKMCategoryBuilder>>visitCommand:
+		startpc: 	a CompiledBlock: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComm...etc...
+		numArgs: 	0
+		receiver: 	a SpKMCategoryBuilder
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: a KMCategoryBinding(nil)
+	Arguments and temporary variables: 
+		aKeymap: 	nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+			...etc...
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(616196352)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(616196352)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComman...etc...
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		l: 	a KMCategoryBinding(nil)
+	Receiver's instance variables: 
+		action: 	[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+		name: 	nil
+		shortcut: 	a KMKeyCombinationChoice
+		defaultShortcut: 	a KMKeyCombinationChoice
+		description: 	nil
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a KMCategoryBinding(nil) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(a KMCategoryBinding(nil) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComman...etc...
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+		name: 	nil
+		shortcut: 	a KMKeyCombinationChoice
+		defaultShortcut: 	a KMKeyCombinationChoice
+		description: 	nil
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComman...etc...
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		action: 	[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+		name: 	nil
+		shortcut: 	a KMKeyCombinationChoice
+		defaultShortcut: 	a KMKeyCombinationChoice
+		description: 	nil
+
+
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBlock: 	[ ^self ]
+		entry: 	nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				i...etc...
+	Receiver's instance variables: 
+		name: 	nil
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+Set>>do:
+	Receiver: a Set(nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCm...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListen...etc...
+		index: 	32
+		each: 	nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				if...etc...
+	Receiver's instance variables: 
+		tally: 	31
+		array: 	an Array(nil nil nil on a KMKeyCombinationChoice do [ 
+			aCmCommand can...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBlock: 	[ ^self ]
+	Receiver's instance variables: 
+		name: 	nil
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: a KMCategoryBinding(nil)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(616196352)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(616196352)
+
+
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aTarget: 	a KMCategoryBinding(nil)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#RubSmalltalkEditor) a KMCategoryBinding(#Ru...etc...
+		morph: 	a RubEditingArea(616196352)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a KMCategoryBinding(nil) a KMCategoryBinding(#RubSmalltalkEditor) a K...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+		...etc...
+		index: 	1
+	Receiver's instance variables: 
+		array: 	an Array(a KMCategoryBinding(nil) a KMCategoryBinding(#RubSmalltalkEdito...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+
+--- The full stack ---
+PjCounterBrowserApp class(Object)>>doesNotUnderstand: #controller
+UndefinedObject>>DoIt
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+[
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionModel doItReceiver.
+		result := receiver class compiler
+			source: aString readStream;
+			context: self interactionModel doItContext;
+			receiver: self interactionModel doItReceiver;
+			requestor: self interactionModel;
+			environment: self environment;
+			failBlock:  [ ^ compileErrorBlock value ];
+			evaluate.
+		oldBindings size = self interactionModel bindings size 
+			ifFalse: [ self withAdapterDo: [ :anAdapter | anAdapter refreshStyling ] ].
+		result ] in SpCodePresenter>>evaluate:onCompileError:onError:
+FullBlockClosure(BlockClosure)>>on:do:
+SpCodePresenter>>evaluate:onCompileError:onError:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluate:andDo:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluateSelectionAndDo:
+SpCodeDoItCommand>>execute
+SpCommand(CmCommandDecorator)>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ] in SpKMCategoryBuilder>>visitCommand:
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+KMShortcutHandler>>handleKeystroke:inMorph:
+RubEditingArea(Morph)>>handleKeyDown:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[
+		result := focusHolder handleFocusEvent: transformedEvent.
+	] in HandMorph>>sendFocusEvent:to:clear:
+FullBlockClosure(BlockClosure)>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+[
+		(morphicWorld activeHand isNotNil and: [ anEvent hand isNotNil ]) ifTrue: [
+			morphicWorld activeHand handleEvent: anEvent
+		]
+	] in OSWindowMorphicEventHandler>>dispatchMorphicEvent:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycleNow
+WorldMorph>>doOneCycle
+[ 
+		| extraWorldsToDraw |
+		extraWorldsToDraw := ExtraWorldListMutex critical: [ 
+			                     self extraWorldList ].
+		extraWorldsToDraw do: [ :world | world doOneCycle ].
+
+		(self currentWorld isNotNil and: [ 
+			 (extraWorldsToDraw includes: self currentWorld) not ]) ifTrue: [ 
+			self currentWorld doOneCycle ] ] in WorldMorph class>>doOneCycle
+FullBlockClosure(BlockClosure)>>ensure:
+WorldState class>>doDrawCycleWith:
+WorldMorph class>>doOneCycle
+MorphicRenderLoop>>doOneCycle
+MorphicRenderLoop>>doOneCycleWhile:
+[
+		MorphicRenderLoop new doOneCycleWhile: [ true ]
+	] in MorphicUIManager>>spawnNewProcess
+[self value.
+			"IMPORTANT: Do not step over next line of code. See method comments for details"
+			Processor terminateRealActive] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Instance of PjCounterBrowserApp class did not understand #controller
+3 March 2024 11:36:12.974 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+PjCounterBrowserApp class(Object)>>doesNotUnderstand: #controller
+	Receiver: PjCounterBrowserApp
+	Arguments and temporary variables: 
+		aMessage: 	controller
+		exception: 	Instance of PjCounterBrowserApp class did not understand #controller...etc...
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		superclass: 	PjFileBasedWebApp
+		methodDict: 	a MethodDictionary(#countDisplay->PjCounterBrowserApp>>#countDispla...etc...
+		format: 	65538
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	#()
+		name: 	#PjCounterBrowserApp
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PharoJs-Examples-Counter'
+		appFolder: 	{localDirectory}\iceberg\PharoJS\PharoJS\HTML\PharoJs-Examples\PjCou...etc...
+		currentInstance: 	nil
+		port: 	nil
+		status: 	nil
+		exportVersion: 	nil
+		cssFile: 	nil
+		htmlFile: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+nil
+
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PjCounterBrowserApp controller increment "Connection established ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self ...etc...
+	Arguments and temporary variables: 
+		exception: 	SyntaxErrorNotification
+		handlerAction: 	[ :exception | 
+			self compilationContext requestor
+           ...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>evaluate
+		startpc: 	a CompiledBlock: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil...etc...
+		numArgs: 	0
+		receiver: 	an OpalCompiler
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PjCounterBrowserApp controller increment "Connection established ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+[
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionModel doItReceiver.
+		result := receiver class compiler
+			source: aString readStream;
+			context: self interactionModel doItContext;
+			receiver: self interactionModel doItReceiver;
+			requestor: self interactionModel;
+			environment: self environment;
+			failBlock:  [ ^ compileErrorBlock value ];
+			evaluate.
+		oldBindings size = self interactionModel bindings size 
+			ifFalse: [ self withAdapterDo: [ :anAdapter | anAdapter refreshStyling ] ].
+		result ] in SpCodePresenter>>evaluate:onCompileError:onError:
+	Receiver: a SpCodePresenter
+	Arguments and temporary variables: 
+		aString: 	'"Connection established with Javascript via PharoJS bridge listening ...etc...
+		compileErrorBlock: 	[ ^ self ]
+		errorBlock: 	[ :e | e pass ]
+		receiver: 	nil
+		result: 	nil
+		oldBindings: 	a Dictionary(#Float32Array->a Proxy for Float32Array #FormData->a ...etc...
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicCodeAdapter)
+		announcer: 	an Announcer
+		owner: 	a StPlaygroundPagePresenter
+		adapter: 	a SpMorphicCodeAdapter
+		needRebuild: 	true
+		eventHandler: 	a SpEventHandler
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ a KMCategory ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Code' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpAbstractWidgetLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		borderWidth: 	an ObservableValueHolder[ nil ]
+		borderColor: 	an ObservableValueHolder[ nil ]
+		dragEnabled: 	an ObservableValueHolder[ false ]
+		dropEnabled: 	an ObservableValueHolder[ false ]
+		color: 	an ObservableValueHolder[ nil ]
+		help: 	an ObservableValueHolder[ nil ]
+		enabled: 	an ObservableValueHolder[ true ]
+		wantsDrop: 	an ObservableValueHolder[ [ :transfer | self dropEnabled ] ]
+		acceptDrop: 	an ObservableValueHolder[ [ :transfer | ] ]
+		deferredActions: 	nil
+		hasUnacceptedEdits: 	an ObservableValueHolder[ false ]
+		selection: 	an ObservableValueHolder[ (1 to: 243) ]
+		wantsVisualFeedback: 	an ObservableValueHolder[ true ]
+		askBeforeDiscardingEdits: 	an ObservableValueHolder[ true ]
+		text: 	an ObservableValueHolder[ '"Connection established with Javascript via Ph...etc...
+		actionToPerform: 	an ObservableValueHolder[ [ :txt |  ] ]
+		readSelection: 	an ObservableValueHolder[ [ selection ] ]
+		placeholder: 	an ObservableValueHolder[ '' ]
+		contextMenu: 	an ObservableValueHolder[ [ (self menuActionsFor: text) asMenuPres...etc...
+		scrollValue: 	an ObservableValueHolder[ (0@0) ]
+		editionContextMenu: 	an ObservableValueHolder[ true ]
+		editable: 	an ObservableValueHolder[ true ]
+		wrapWord: 	an ObservableValueHolder[ true ]
+		undoRedoHistory: 	true
+		wrapScrollBars: 	true
+		propagateNaturalHeight: 	false
+		propagateNaturalWidth: 	false
+		scrollBarStyles: 	#()
+		syntaxHighlight: 	an ObservableValueHolder[ true ]
+		lineNumbers: 	an ObservableValueHolder[ true ]
+		interactionModel: 	an ObservableValueHolder[ a StPlaygroundInteractionModel ]
+		overrideContextMenu: 	true
+		submitBlock: 	nil
+		resetBlock: 	nil
+		environment: 	nil
+		systemNavigation: 	nil
+		syntaxHighlightTheme: 	an ObservableValueHolder[ nil ]
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionMode...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :e | e pass ]
+	Receiver's instance variables: 
+		outerContext: 	SpCodePresenter>>evaluate:onCompileError:onError:
+		startpc: 	a CompiledBlock: [
+		oldBindings := self interactionModel bindings cop...etc...
+		numArgs: 	0
+		receiver: 	a SpCodePresenter
+
+
+SpCodePresenter>>evaluate:onCompileError:onError:
+	Receiver: a SpCodePresenter
+	Arguments and temporary variables: 
+		receiver: 	nil
+		result: 	nil
+		oldBindings: 	a Dictionary(#Float32Array->a Proxy for Float32Array #FormData->a ...etc...
+		aString: 	'"Connection established with Javascript via PharoJS bridge listening ...etc...
+		compileErrorBlock: 	[ ^ self ]
+		errorBlock: 	[ :e | e pass ]
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicCodeAdapter)
+		announcer: 	an Announcer
+		owner: 	a StPlaygroundPagePresenter
+		adapter: 	a SpMorphicCodeAdapter
+		needRebuild: 	true
+		eventHandler: 	a SpEventHandler
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ a KMCategory ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Code' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpAbstractWidgetLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		borderWidth: 	an ObservableValueHolder[ nil ]
+		borderColor: 	an ObservableValueHolder[ nil ]
+		dragEnabled: 	an ObservableValueHolder[ false ]
+		dropEnabled: 	an ObservableValueHolder[ false ]
+		color: 	an ObservableValueHolder[ nil ]
+		help: 	an ObservableValueHolder[ nil ]
+		enabled: 	an ObservableValueHolder[ true ]
+		wantsDrop: 	an ObservableValueHolder[ [ :transfer | self dropEnabled ] ]
+		acceptDrop: 	an ObservableValueHolder[ [ :transfer | ] ]
+		deferredActions: 	nil
+		hasUnacceptedEdits: 	an ObservableValueHolder[ false ]
+		selection: 	an ObservableValueHolder[ (1 to: 243) ]
+		wantsVisualFeedback: 	an ObservableValueHolder[ true ]
+		askBeforeDiscardingEdits: 	an ObservableValueHolder[ true ]
+		text: 	an ObservableValueHolder[ '"Connection established with Javascript via Ph...etc...
+		actionToPerform: 	an ObservableValueHolder[ [ :txt |  ] ]
+		readSelection: 	an ObservableValueHolder[ [ selection ] ]
+		placeholder: 	an ObservableValueHolder[ '' ]
+		contextMenu: 	an ObservableValueHolder[ [ (self menuActionsFor: text) asMenuPres...etc...
+		scrollValue: 	an ObservableValueHolder[ (0@0) ]
+		editionContextMenu: 	an ObservableValueHolder[ true ]
+		editable: 	an ObservableValueHolder[ true ]
+		wrapWord: 	an ObservableValueHolder[ true ]
+		undoRedoHistory: 	true
+		wrapScrollBars: 	true
+		propagateNaturalHeight: 	false
+		propagateNaturalWidth: 	false
+		scrollBarStyles: 	#()
+		syntaxHighlight: 	an ObservableValueHolder[ true ]
+		lineNumbers: 	an ObservableValueHolder[ true ]
+		interactionModel: 	an ObservableValueHolder[ a StPlaygroundInteractionModel ]
+		overrideContextMenu: 	true
+		submitBlock: 	nil
+		resetBlock: 	nil
+		environment: 	nil
+		systemNavigation: 	nil
+		syntaxHighlightTheme: 	an ObservableValueHolder[ nil ]
+
+
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluate:andDo:
+	Receiver: a SpCodeDoItCommand
+	Arguments and temporary variables: 
+		aString: 	'"Connection established with Javascript via PharoJS bridge listening ...etc...
+		aBlock: 	[ :result | ]
+	Receiver's instance variables: 
+		context: 	a SpCodePresenter
+		basicName: 	'Do it'
+		basicDescription: 	'Evaluate selection.'
+		transform: 	[ :aContext | aContext ]
+
+
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluateSelectionAndDo:
+	Receiver: a SpCodeDoItCommand
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | ]
+		selection: 	'"Connection established with Javascript via PharoJS bridge listenin...etc...
+	Receiver's instance variables: 
+		context: 	a SpCodePresenter
+		basicName: 	'Do it'
+		basicDescription: 	'Evaluate selection.'
+		transform: 	[ :aContext | aContext ]
+
+
+SpCodeDoItCommand>>execute
+	Receiver: a SpCodeDoItCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		context: 	a SpCodePresenter
+		basicName: 	'Do it'
+		basicDescription: 	'Evaluate selection.'
+		transform: 	[ :aContext | aContext ]
+
+
+SpCommand(CmCommandDecorator)>>execute
+	Receiver: a SpCommand(Do it)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpCodeDoItCommand
+		iconProvider: 	nil
+		iconName: 	#smallDoIt
+		shortcutKey: 	a KMKeyCombinationChoice
+		displayStrategy: 	a CmUIDisableWhenCantBeRun
+		positionStrategy: 	a CmUILeftPositionStrategy
+		buildPresenterBlock: 	[ :specCommand | 
+			aButtonClass new
+				label: specComma...etc...
+		presenter: 	nil
+
+
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpCommand(Do it)
+
+
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	a StPharoApplication
+	Receiver's instance variables: 
+		index: 	11
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+			activeProcess
+				psValueAt: index
+				put: oldValue ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SpToolCurrentApplication(DynamicVariable)>>value:during:
+		startpc: 	a CompiledBlock: [ activeProcess
+			psValueAt: index
+			put: anObject....etc...
+		numArgs: 	0
+		receiver: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	a StPharoApplication
+	Receiver's instance variables: 
+		index: 	11
+
+
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+	Receiver: SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+	Receiver's instance variables: 
+		superclass: 	DynamicVariable
+		methodDict: 	a MethodDictionary()
+		format: 	65537
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SpToolCurrentApplication
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Spec2-Commands-Presenters'
+		soleInstance: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpCommand(Do it)
+
+
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpToolCurrentApplicationCommand
+
+
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	nil
+	Receiver's instance variables: 
+		index: 	11
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+			activeProcess
+				psValueAt: index
+				put: oldValue ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SpToolCurrentApplication(DynamicVariable)>>value:during:
+		startpc: 	a CompiledBlock: [ activeProcess
+			psValueAt: index
+			put: anObject....etc...
+		numArgs: 	0
+		receiver: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+	Receiver: a SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+		activeProcess: 	a Process in nil
+		oldValue: 	nil
+	Receiver's instance variables: 
+		index: 	11
+
+
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+	Receiver: SpToolCurrentApplication
+	Arguments and temporary variables: 
+		anObject: 	a StPharoApplication
+		aBlock: 	[ self decoratedCommand execute ]
+	Receiver's instance variables: 
+		superclass: 	DynamicVariable
+		methodDict: 	a MethodDictionary()
+		format: 	65537
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SpToolCurrentApplication
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Spec2-Commands-Presenters'
+		soleInstance: 	a SpToolCurrentApplication
+
+
+SpToolCurrentApplicationCommand>>execute
+	Receiver: a SpToolCurrentApplicationCommand
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		decoratedCommand: 	a SpToolCurrentApplicationCommand
+
+
+[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ] in SpKMCategoryBuilder>>visitCommand:
+	Receiver: a SpKMCategoryBuilder
+	Arguments and temporary variables: 
+		aCmCommand: 	a SpToolCurrentApplicationCommand
+	Receiver's instance variables: 
+		kmCategory: 	a KMCategory
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(616196352)
+	Receiver's instance variables: 
+		outerContext: 	SpKMCategoryBuilder>>visitCommand:
+		startpc: 	a CompiledBlock: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComm...etc...
+		numArgs: 	0
+		receiver: 	a SpKMCategoryBuilder
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(616196352)
+		secondArg: 	a RubEditingArea(616196352)
+	Receiver's instance variables: 
+		outerContext: 	SpKMCategoryBuilder>>visitCommand:
+		startpc: 	a CompiledBlock: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComm...etc...
+		numArgs: 	0
+		receiver: 	a SpKMCategoryBuilder
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+	Receiver: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(616196352)
+		secondArg: 	a RubEditingArea(616196352)
+		thirdArg: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		outerContext: 	SpKMCategoryBuilder>>visitCommand:
+		startpc: 	a CompiledBlock: [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComm...etc...
+		numArgs: 	0
+		receiver: 	a SpKMCategoryBuilder
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: a KMCategoryBinding(nil)
+	Arguments and temporary variables: 
+		aKeymap: 	nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+			...etc...
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(616196352)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(616196352)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComman...etc...
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		l: 	a KMCategoryBinding(nil)
+	Receiver's instance variables: 
+		action: 	[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+		name: 	nil
+		shortcut: 	a KMKeyCombinationChoice
+		defaultShortcut: 	a KMKeyCombinationChoice
+		description: 	nil
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a KMCategoryBinding(nil) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(a KMCategoryBinding(nil) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComman...etc...
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+		name: 	nil
+		shortcut: 	a KMKeyCombinationChoice
+		defaultShortcut: 	a KMKeyCombinationChoice
+		description: 	nil
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmComman...etc...
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		action: 	[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ]
+		name: 	nil
+		shortcut: 	a KMKeyCombinationChoice
+		defaultShortcut: 	a KMKeyCombinationChoice
+		description: 	nil
+
+
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBlock: 	[ ^self ]
+		entry: 	nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				i...etc...
+	Receiver's instance variables: 
+		name: 	nil
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+Set>>do:
+	Receiver: a Set(nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCm...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListen...etc...
+		index: 	32
+		each: 	nil on a KMKeyCombinationChoice do [ 
+			aCmCommand canBeExecuted 
+				if...etc...
+	Receiver's instance variables: 
+		tally: 	31
+		array: 	an Array(nil nil nil on a KMKeyCombinationChoice do [ 
+			aCmCommand can...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(nil) a KMDispatcher)
+		aBlock: 	[ ^self ]
+	Receiver's instance variables: 
+		name: 	nil
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: a KMCategoryBinding(nil)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(616196352)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(616196352)
+
+
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aTarget: 	a KMCategoryBinding(nil)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#RubSmalltalkEditor) a KMCategoryBinding(#Ru...etc...
+		morph: 	a RubEditingArea(616196352)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a KMCategoryBinding(nil) a KMCategoryBinding(#RubSmalltalkEditor) a K...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+		...etc...
+		index: 	1
+	Receiver's instance variables: 
+		array: 	an Array(a KMCategoryBinding(nil) a KMCategoryBinding(#RubSmalltalkEdito...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+
+--- The full stack ---
+PjCounterBrowserApp class(Object)>>doesNotUnderstand: #controller
+UndefinedObject>>DoIt
+[ receiver wiError printing the compiledBlock in OpalCompiler>>evaluate
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+[
+		oldBindings := self interactionModel bindings copy.
+		receiver := self interactionModel doItReceiver.
+		result := receiver class compiler
+			source: aString readStream;
+			context: self interactionModel doItContext;
+			receiver: self interactionModel doItReceiver;
+			requestor: self interactionModel;
+			environment: self environment;
+			failBlock:  [ ^ compileErrorBlock value ];
+			evaluate.
+		oldBindings size = self interactionModel bindings size 
+			ifFalse: [ self withAdapterDo: [ :anAdapter | anAdapter refreshStyling ] ].
+		result ] in SpCodePresenter>>evaluate:onCompileError:onError:
+FullBlockClosure(BlockClosure)>>on:do:
+SpCodePresenter>>evaluate:onCompileError:onError:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluate:andDo:
+SpCodeDoItCommand(SpCodeSelectionCommand)>>evaluateSelectionAndDo:
+SpCodeDoItCommand>>execute
+SpCommand(CmCommandDecorator)>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ self decoratedCommand execute ] in SpToolCurrentApplicationCommand>>execute
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpToolCurrentApplication(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpToolCurrentApplication(DynamicVariable)>>value:during:
+SpToolCurrentApplication class(DynamicVariable class)>>value:during:
+SpToolCurrentApplicationCommand>>execute
+[ 
+			aCmCommand canBeExecuted 
+				ifTrue: [ aCmCommand execute ] ] in SpKMCategoryBuilder>>visitCommand:
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+KMShortcutHandler>>handleKeystroke:inMorph:
+RubEditingArea(Morph)>>handleKeyDown:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[
+		result := focusHolder handleFocusEvent: transformedEvent.
+	] in HandMorph>>sendFocusEvent:to:clear:
+FullBlockClosure(BlockClosure)>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+[
+		(morphicWorld activeHand isNotNil and: [ anEvent hand isNotNil ]) ifTrue: [
+			morphicWorld activeHand handleEvent: anEvent
+		]
+	] in OSWindowMorphicEventHandler>>dispatchMorphicEvent:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycleNow
+WorldMorph>>doOneCycle
+[ 
+		| extraWorldsToDraw |
+		extraWorldsToDraw := ExtraWorldListMutex critical: [ 
+			                     self extraWorldList ].
+		extraWorldsToDraw do: [ :world | world doOneCycle ].
+
+		(self currentWorld isNotNil and: [ 
+			 (extraWorldsToDraw includes: self currentWorld) not ]) ifTrue: [ 
+			self currentWorld doOneCycle ] ] in WorldMorph class>>doOneCycle
+FullBlockClosure(BlockClosure)>>ensure:
+WorldState class>>doDrawCycleWith:
+WorldMorph class>>doOneCycle
+MorphicRenderLoop>>doOneCycle
+MorphicRenderLoop>>doOneCycleWhile:
+[
+		MorphicRenderLoop new doOneCycleWhile: [ true ]
+	] in MorphicUIManager>>spawnNewProcess
+[self value.
+			"IMPORTANT: Do not step over next line of code. See method comments for details"
+			Processor terminateRealActive] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
